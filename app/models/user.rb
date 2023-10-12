@@ -108,7 +108,6 @@ class User < ApplicationRecord
   end
 
 
-
   private
 
     # メールアドレスをすべて小文字にする
