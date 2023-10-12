@@ -23,6 +23,10 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil:true
 
+  def self.ransackable_attributes(auth_object = nil)
+    ["activated", "activated_at", "activation_digest", "admin", "created_at", "email", "id", "name", "password_digest", "remember_digest", "reset_digest", "reset_sent_at", "updated_at"]
+  end
+
   # 渡された文字列のハッシュ値を返す
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :

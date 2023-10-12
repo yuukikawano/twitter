@@ -313,3 +313,18 @@ span.image {
     border: 0;
   }
 }
+
+.search_form {
+  overflow: auto;
+  margin: auto;
+  float: right;
+  .input-group {
+    width: 300px;
+    .form-control {
+      width: 250px;
+    }
+    .btn {
+      width: 50px;
+    }
+  }
+}
