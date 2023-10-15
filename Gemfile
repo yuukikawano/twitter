@@ -5,6 +5,7 @@ ruby "3.2.2"
 
 gem "rails",           "7.0.4.3"
 gem "ransack"
+gem 'counter_culture'
 gem "active_storage_validations", "0.9.8"
 gem "bcrypt",          "3.1.18"
 gem "faker",           "2.21.0"
